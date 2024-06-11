@@ -10,13 +10,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+        android:layout_height="match_parent"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,7 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="16dp"
                 android:padding="8dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -52,6 +46,7 @@
                 android:id="@+id/imageView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView11"
                 app:layout_constraintEnd_toStartOf="@+id/imageView11"
                 tools:srcCompat="@drawable/share" />
@@ -84,10 +79,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="30dp"
+            android:layout_marginTop="16dp"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView22"
+                android:id="@+id/titleTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -156,7 +152,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView26"
+                android:id="@+id/reviewTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -179,12 +175,16 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie. Feugiat sed lectus vestibulum mattis ullamcorper. Eget sit amet tellus cras adipiscing enim. Quis viverra nibh cras pulvinar mattis nunc sed. Faucibus vitae aliquet nec ullamcorper sit amet. Non odio euismod lacinia at quis risus sed vulputate odio. Lorem mollis aliquam ut porttitor leo a. Aliquet eget sit amet tellus cras adipiscing. Vel eros donec ac odio tempor. Tellus in metus vulputate eu. Egestas pretium aenean pharetra magna ac placerat vestibulum. Mattis rhoncus urna neque viverra justo nec ultrices. Arcu dictum varius duis at consectetur. Egestas congue quisque egestas diam in arcu cursus."
+            android:text=""
             android:textSize="16sp"
             android:textColor="@color/black"/>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/buyBtn"
+            android:id="@+id/addToCardBtn"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
             style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
